@@ -1,0 +1,13 @@
+[package]
+name = "ffi_example"
+version = "0.0.1"
+authors = ["Daniel P. Clark"]
+
+[lib]
+name = "ffi_example"
+crate-type = ["dylib"]
+
+[dependencies]
+ruru = "0.9.3"
+array_tool = "*"
+libc = "0.2.33"

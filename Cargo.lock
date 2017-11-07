@@ -1,0 +1,47 @@
+[[package]]
+name = "array_tool"
+version = "0.4.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "ffi_example"
+version = "0.0.1"
+dependencies = [
+ "array_tool 0.4.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc 0.2.33 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ruru 0.9.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "lazy_static"
+version = "0.2.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "libc"
+version = "0.2.33"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "ruby-sys"
+version = "0.2.20"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "libc 0.2.33 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "ruru"
+version = "0.9.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "lazy_static 0.2.9 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ruby-sys 0.2.20 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum array_tool 0.4.1 (registry+https://github.com/rust-lang/crates.io-index)" = "1a07ccb27c611e5cda99e498e99ba71b3ecdb7db5df02096cef42a3df5b84542"
+"checksum lazy_static 0.2.9 (registry+https://github.com/rust-lang/crates.io-index)" = "c9e5e58fa1a4c3b915a561a78a22ee0cac6ab97dca2504428bc1cb074375f8d5"
+"checksum libc 0.2.33 (registry+https://github.com/rust-lang/crates.io-index)" = "5ba3df4dcb460b9dfbd070d41c94c19209620c191b0340b929ce748a2bcd42d2"
+"checksum ruby-sys 0.2.20 (registry+https://github.com/rust-lang/crates.io-index)" = "e71509f17ce93733dc196258e168b58050490a156b04563816a8120a74ba04c7"
+"checksum ruru 0.9.3 (registry+https://github.com/rust-lang/crates.io-index)" = "6486d6c50b7a08246a492a61893635c1977d41c138041d443eb603f6298e0273"
