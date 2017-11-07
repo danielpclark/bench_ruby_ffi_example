@@ -3,8 +3,6 @@ require 'benchmark/ips'
 
 BPATH = '/home/gumby/work/ruby.rb'
 
-RURU_EXAMPLE = RuruExample.allocate
-
 Benchmark.ips do |x|
   x.report('Ruby\'s C impl') do
     File.basename(BPATH)
@@ -32,8 +30,8 @@ Benchmark.ips do |x|
   end
 
   x.report('through ruru') do
-    RURU_EXAMPLE.basename(BPATH, '')
-    RURU_EXAMPLE.basename(BPATH, '.rb')
+    RuruExample.basename(BPATH, '')
+    RuruExample.basename(BPATH, '.rb')
   end
 
   x.compare!

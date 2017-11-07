@@ -23,6 +23,6 @@ class BasenameTest < Minitest::Test
   # end
 
   def test_ruru_basename
-    assert_equal RuruExample.allocate.basename(@input, ''), 'ruby.rb'
+    assert_equal RuruExample.basename(@input, ''), 'ruby.rb'
   end
 end

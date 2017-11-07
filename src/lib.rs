@@ -37,7 +37,7 @@ mod rust {
 
   pub fn basename(pth: &str, ext: &str) -> String {
     // Known edge case
-    // if &pth.squeeze("/")[..] == "/" { return "/".to_string(); }
+    //if &pth.squeeze("/")[..] == "/" { return "/".to_string(); }
 
     let mut name = extract_last_path_segment(pth);
 
@@ -108,6 +108,6 @@ methods!(
 #[no_mangle]
 pub extern "C" fn Init_ruru_example(){
   Class::new("RuruExample", None).define(|itself| {
-    itself.def("basename", pub_basename);
+    itself.def_self("basename", pub_basename);
   });
 }
