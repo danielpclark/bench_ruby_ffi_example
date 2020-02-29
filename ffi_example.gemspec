@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "bundler", "~> 1.12"
-  spec.add_dependency "rake", "~> 12.0"
+  spec.add_dependency "rake", ">= 12", "< 14"
   spec.add_dependency "ffi", "~> 1.9"
   spec.add_development_dependency "minitest", "~> 5.10"
   spec.add_development_dependency "minitest-reporters", "~> 1.1"
