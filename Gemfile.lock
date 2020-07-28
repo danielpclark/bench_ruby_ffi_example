@@ -21,7 +21,7 @@ GEM
       rake
     docile (1.1.5)
     ffi (1.9.18)
-    json (2.1.0)
+    json (2.3.1)
     minitest (5.10.3)
     minitest-reporters (1.1.18)
       ansi
